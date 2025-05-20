@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 19</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 10px;
+            row-gap: 10px;
+            justify-content: center;
+            border: 1px solid black;
+        }
+        .grid-item{
+            border: 1px solid rgb(62, 0, 233);
+        }
+        container1 {
+        border: 1px solid rgb(175, 0, 190);
+        width: 300px;
+        height: 100px;
+        }
+        .child1 {
+        float: right;
+        border: 1px solid rgb(250, 5, 46);
+        }
+        .p1 {
+        text-decoration-line: overline;
+        }
+        .p1{
+            text-transform: capitalize;
+        }
+        .p2{
+            text-transform: lowercase;
+        }
+        .positioned{
+            position: relative;
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+        }
+        .nonpositioned{
+            border: 1px dashed black;
+            width: 150px;
+            height: 150px;
+        }
+        .absolute{
+            position: absolute;
+            border: 1px dashed rgb(38, 0, 255);
+            background-color: rgb(215, 226, 60);
+            right: 30px;
+            top: 30px;
+        }
+        .parent{
+            width: 200px;
+            height: 200px;
+            overflow: auto;
+        }
+        .sticky{
+            position: sticky;
+            top: 0;
+            border: 1px solid rgb(85, 180, 197);
+            background-color: rgb(45, 12, 233);
+            color: aliceblue;
+        }
+        .parent1{
+        height: 200px;
+        width: 200px;
+        border: 1px dashed rgb(117, 46, 46);
+        }
+        .normal1{
+            border: 1px dashed rgb(255, 251, 0);
+        }
+        .relative1{
+            border: 1px solid rgb(147, 64, 202);
+            position: relative;
+            left: 30px;
+            top: 30px;
+        }
+        .big {
+            height: 400px;
+            border: 1px solid black;
+        }
+        .fixed {
+            position: fixed;
+            right: 30px;
+            top: 190px;
+            width: 100px;
+            border: 1px solid rgb(252, 71, 0);
+            background-color: red;
+            color: white;
+        }
+
+        .flex-container{
+            display: flex;   
+            flex-wrap: wrap;
+            align-content: flex-start;
+            border: 1px solid black;
+            width: 300px;
+            height: 150px;
+            gap: 10px;
+        }
+        .flex-item{
+            border: 1px solid rgb(85, 87, 211);
+            flex-basis: 120px;
+        }
+        #container{
+            border: 1px solid black;
+        }
+        .container{
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+       .child{
+        width: 100px;
+        height: 100px;
+        background-color: white;
+       }
+       .absolute{
+        position: absolute;
+        border: 1px solid rgb(0, 47, 255);
+        text-align: right;
+       }
+       .z-index-minus-two{
+        z-index: -2;
+        left: 100px;
+        top: 5px;
+       }
+       .z-index-minus-one{
+        z-index: -1;
+        left: 70px;
+        top: 35px;
+       }
+       .z-index-zero{
+        z-index: 0;
+        left: 40px;
+        top: 65px;
+       }
+       .z-index-one{
+        z-index: 1;
+        left: 10px;
+        top: 95px;
+       }
+       .z-index-two{
+        z-index: 2;
+       }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="logo">
+            <a href="index.html"><img src="images/idb-bisew.png" alt="IsDB-BISEWLogo"></a>
+            <div class="logo_Text">
+                <h1><a href="" style="font-size: 20px;">IsDB-BISEW</a></h1>
+                <p><a href="" style="font-size: 20px;">Islamic Development Bank<br>Bangladesh Islamic Solidarity Educational Wakf</a></p>
+            </div>
+        </div>
+        <div class="navBar">
+            <div class="dropDown">
+                <button class="dropBtn">HTML<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="chapter_1.html">Chapter 1</a>
+                    <a href="chapter_2.html">Chapter 2</a>
+                    <a href="chapter_3.html" >Chapter 3</a>
+                    <a href="chapter_4.html" >Chapter 4</a>
+                    <a href="chapter_5.html" >Chapter 5</a>
+                    <a href="chapter_6.html" >Chapter 6</a>
+                    <a href="chapter_7.html" >Chapter 7</a>
+                    <a href="chapter_8.html" >Chapter 8</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn">CSS<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="chapter_11.html" >Chapter 11</a>
+                    <a href="chapter_12.html" >Chapter 12</a>
+                    <a href="chapter_13.html" >Chapter 13</a>
+                    <a href="chapter_14.html" >Chapter 14</a>
+                    <a href="chapter_15.html" >Chapter 15</a>
+                    <a href="chapter_16.html" >Chapter 16</a>
+                    <a href="chapter_17.html" >Chapter 17</a>
+                    <a href="chapter_18.html" >Chapter 18</a>
+                    <a href="chapter_19.html" >Chapter 19</a>
+                    <a href="chapter_20.html" >Chapter 20</a>
+                    <a href="chapter_21.html" >Chapter 21</a>
+                    <a href="chapter_22.html" >Chapter 22</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn">Previous Projects<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="https://drive.google.com/file/d/1ySzGXdyQOOqlWsAKJaiTfmozWXRw8j6K/view?usp=sharing" >Microsoft Visual C#</a>
+                    <a href="https://drive.google.com/file/d/1iONn7_4zL8Rth2uuOScrCezHAQn3BEsq/view?usp=sharing" >SQL Server</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1 style="font-family:'Times New Roman', Times, serif; text-align: center;">Chapter 19<strong style="font-family: 'Times New Roman', Times, serif; font-size: 25px; text-align: center;"><br>CSS Layout</strong></h1><br>
+    <main>
+
+        <div class="grid-container">
+            <div class="grid-item item1">Month 1</div>
+            <div class="grid-item item2">Month 2</div>
+            <div class="grid-item item3">Month 3</div>
+            <div class="grid-item item4">Month 4</div>
+            <div class="grid-item item5">Month 5</div>
+            <div class="grid-item item6">Month 6</div>
+            <div class="grid-item item7">Month 7</div>
+            <div class="grid-item item8">Month 8</div>
+            <div class="grid-item item9">Month 9</div>
+            <div class="grid-item item7">Month 10</div>
+            <div class="grid-item item8">Month 11</div>
+            <div class="grid-item item9">Month 12</div>
+            </div><br><br><br><hr>
+
+            <div class="container1">
+                <div class="child1"> HTML & CSS  </div>
+                <div class="child1"> JavaScript</div>
+                </div><br><br><br><hr><br><br>
+
+                <div><p class="p1">The name of this month is February</p><br>
+                    <p class="p2">The name of the next month is March</p><br><hr><br>
+                </div>
+
+            <div class="positioned">Positioned
+                <div class="nonpositioned">Nonpositioned</div>
+                <div class="absolute"> Absolute</div>
+            </div><br><br><br><hr>
+
+            <div class="parent">
+                <h3>Sticky</h3>
+                <div class="sticky">Programming!</div>
+                <p>Computer programming can as well be defined as a process that leads from an original formulation of a computer problem to execute problems. Computer programming is also referred to as programming. It encompasses other activities such as understanding, analysis and generally solving problems that result in algorithm, verifying the algorithm requirements and coding algorithm in a target program language. The program also involves the implementation of the build system and managing derived artifacts like computer programs machine codes. Most often, the algorithm is represented in human-parseable languages such as Java, Python, Smalltalk among others.</p>
+                </div><br><br><br><hr><br><br>
+
+                <div class="parent1">
+                    <div class="normal1">Normal </div>
+                    <div class="relative1"> Relative</div>
+            
+                </div><br><br><hr><br><br>
+                <br><br><br><br><br>
+
+
+
+            <div>Title Element</div>
+            <div class="fixed">I am Fixed!</div>
+            <div class="big">Large Element.</div><br><br><br><hr>
+                <div class="flex-container">
+                <div class="flex-item item1">Flex Number 1</div>
+                <div class="flex-item item2">Flex Number 2</div>
+                <div class="flex-item item3">Flex Number 3</div>
+                </div><br><br><hr>
+            
+                <div id="container" class="container">
+                    <div class="absolute child z-index-minus-two">z-index: -2</div>
+                    <div class="absolute child z-index-minus-one">z-index: -1</div>
+                    <div class="absolute child z-index-zero">z-index: 0</div>
+                    <div class="absolute child z-index-one">z-index: 1</div>
+                    <div class="child z-index-two">z-index: 2; but I'm not
+                    positioned
+                </div>
+    </main>
+</body>
+</html>

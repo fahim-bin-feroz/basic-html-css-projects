@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 12</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #my-text {
+        color: red;
+        }
+
+        body * .article {
+        color: rgb(17, 230, 148);
+        }
+
+        .my-text {
+        color: rgb(73, 125, 238);
+        }
+
+        .interaction:focus {
+        color: red;
+        }
+        .interaction:hover {
+        color: green;
+        }
+        .interaction:active {
+        color: blue;
+        }
+
+        .elements:enabled {
+        background-color: cyan;
+        }
+        .elements:disabled {
+        background-color: #ccc;
+        }
+
+        input:invalid {
+        background-color: lightpink;
+        }
+
+        input:checked + span {
+        color: red;
+        }
+
+        input:required {
+        background-color: lightgreen;
+        }
+        input:out-of-range {
+        background-color: lightblue;
+        }
+
+
+        .first :first-child {
+        color: rgb(255, 10, 10);
+        }
+
+        .last :last-child {
+        color: red;
+        }
+
+        .psuNth:nth-child(3) {
+        color: red;
+        }
+        :target {
+        border: 1px solid rgb(54, 142, 214);
+        }
+
+        .firstelement::first-letter {
+        font-size: 30px;
+        color: rgba(5, 112, 233, 0.932);
+        }
+        .firstline::first-line {
+        color: rgb(0, 24, 241);
+        }
+
+        .required::before {
+        content: "* ";
+        color: red;
+        }
+
+        .text::selection {
+        color: rgb(110, 21, 21);
+        background-color: rgb(119, 183, 202);
+        }
+
+        [class="my-texts"] {
+        color: rgb(214, 90, 148);
+        }
+
+        [class|="new"] {
+        color: rgb(214, 90, 148);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="logo">
+            <a href="index.html"><img src="images/idb-bisew.png" alt="IsDB-BISEWLogo"></a>
+            <div class="logo_Text">
+                <h1><a href="" style="font-size: 20px;">IsDB-BISEW</a></h1>
+                <p><a href="" style="font-size: 20px;">Islamic Development Bank<br>Bangladesh Islamic Solidarity Educational Wakf</a></p>
+            </div>
+        </div>
+        <div class="navBar">
+            <div class="dropDown">
+                <button class="dropBtn">HTML<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="chapter_1.html">Chapter 1</a>
+                    <a href="chapter_2.html">Chapter 2</a>
+                    <a href="chapter_3.html" >Chapter 3</a>
+                    <a href="chapter_4.html" >Chapter 4</a>
+                    <a href="chapter_5.html" >Chapter 5</a>
+                    <a href="chapter_6.html" >Chapter 6</a>
+                    <a href="chapter_7.html" >Chapter 7</a>
+                    <a href="chapter_8.html" >Chapter 8</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn">CSS<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="chapter_11.html" >Chapter 11</a>
+                    <a href="chapter_12.html" >Chapter 12</a>
+                    <a href="chapter_13.html" >Chapter 13</a>
+                    <a href="chapter_14.html" >Chapter 14</a>
+                    <a href="chapter_15.html" >Chapter 15</a>
+                    <a href="chapter_16.html" >Chapter 16</a>
+                    <a href="chapter_17.html" >Chapter 17</a>
+                    <a href="chapter_18.html" >Chapter 18</a>
+                    <a href="chapter_19.html" >Chapter 19</a>
+                    <a href="chapter_20.html" >Chapter 20</a>
+                    <a href="chapter_21.html" >Chapter 21</a>
+                    <a href="chapter_22.html" >Chapter 22</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn">Previous Projects<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="https://drive.google.com/file/d/1ySzGXdyQOOqlWsAKJaiTfmozWXRw8j6K/view?usp=sharing" >Microsoft Visual C#</a>
+                    <a href="https://drive.google.com/file/d/1iONn7_4zL8Rth2uuOScrCezHAQn3BEsq/view?usp=sharing" >SQL Server</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1 style="font-family:'Times New Roman', Times, serif; text-align: center;">Chapter 12<strong style="font-family: 'Times New Roman', Times, serif; font-size: 25px; text-align: center;"><br>Selectors</strong></h1><br>
+
+    <main>
+        <div>
+        <p id="my-text"> He said, “And who despairs of his Lord’s mercy but the lost?”</p>
+        </div><br>
+         
+        <div>
+            <article class="article">The promise of God—God never breaks His promise, but most people do not know.</article>
+        </div><br>
+        <div>
+            <h3 class="my-text">To Pharaoh and his nobles, but they turned arrogant. They were oppressive people.</h3> 
+        </div><br>
+
+        <div>
+            <p> "To God belongs everything in the heavens and everything on earth, and to God all events are referred.."</p>
+        </div><br>
+            <p> He said, “It is God who will bring it upon you, if He wills, and you will not be able to escape.”</p><br>
+
+            <button>Push Here</button><br><br>
+
+            <button class="interaction" style="border-radius: 5px;">Click Me</button><br>
+
+        <div>
+            <p class="elements"> User's information</p>
+            <p class="elements">Username: <input class="elements" type="text" value="username" disabled /><br>
+            </p>
+             <p class="elements">Email: <input class="elements" type="text" value="email@company.com" /></p><br>
+        </div><br>
+
+        <form action=""><br>
+            <p>This text input must be a three-letter code:</p><br>
+            <input type="text" name="code" pattern="[A-Za-z]{3}"
+            title="Three letter code." value="a" />
+        </form><br>
+
+        <div>
+            <p >Select your options:</p>
+        <p>
+            Gender:
+            <label ><input type="radio" name="gender" />
+            <span>Male</span></label>
+            <label><input type="radio" name="gender" />
+            <span>Female</span></label><br>
+        </p><br>
+        <p>
+            <label ><input type="checkbox" /> <span>I have checked all the evidence</span></label>
+        </p><br>
+        </div>
+        <div><br>
+            <form action="">
+                <p>This text input is required:</p>
+                <input type="text" name="fname" required />
+            </form>
+        </div><br>
+
+        <div><br>
+            <form action="">
+                <p>This number input must be in the range of 1 - 10:</p>
+                <input type="number" name="quantity" min="1" max="10"
+                    value="5" />
+            </form>
+        </div><br>
+
+        <h2>Pseudo Elements(First/Last)</h2>
+            <div class="first">
+                <p>Example of Pseudo First Item - 1</p>
+                <p>Example of Pseudo Second Item - 2</p>
+                <p>Example of Pseudo Third Item - 3</p>
+                <p>Example of Pseudo Fourth Item - 4</p>
+            </div><br>
+
+            <div class="last">
+                <p>Example of Pseudo Last Element 1</p>
+                <p>Example of Pseudo Last Element 2</p>
+            
+                <p>Example of Pseudo Last Element 3</p>
+                <p>Example of Pseudo Last Element 4</p>
+            </div><br>
+
+            <div>
+                <h2>Pseudo Elements(nth)</h2>
+                <p class="psuNth" >Example of Pseudo nth 1</p>
+                <p class="psuNth">Example of Pseudo nth 2</p>
+                <p class="psuNth">Example of Pseudo nth 3</p>
+            </div>
+                <p class="psuNth">Example of Pseudo nth 4</p>
+                <p class="psuNth">Example of Pseudo nth 5</p>
+                <p class="psuNth">Example of Pseudo nth 6</p><br>
+
+                <a href="#target1">“And it is He who created the night and day, and the sun and moon.”</a><br>
+                <a href="#target2">“And the Hereafter is better for you than the first [life]. And your Lord is going to give you, and you will be satisfied.”</a>
+                <p id="target1">Quran 21:33</p>
+                <p id="target2"> Quran 93:4-5</p><br>
+
+            <div>
+                    <h1 class="firstelement">Forgive others as quickly as you expect Allah (God) to forgive you.</h1>
+                    <p class="firstelement">We Love Programming</p>
+            </div><br>
+
+
+            <div>
+                <p class="firstline">“Do not lose hope, nor be sad.”<br />Quran 3:139..</p>
+            </div><br>
+
+            <div>
+
+                <p>
+                    <label>Username: </label>
+                    <input type="text" />
+                    </p>
+                    <p>
+                    <label class="required">Email: </label>
+                    <input type="text" />
+                    </p>
+            </div><br>
+
+
+            <div>
+                <p class="text">Hello Programmers</p>
+            </div>
+
+            <div>
+                <p class="my-texts">Welcome to my HTML Project</p>
+            </div>
+                <p class="another-texts">This is my HTML CSS Project</p><br>
+
+                <p>[class|="new"] { color: red; }</p><br>
+                <p class="new">New class: "New"</p>
+                <p class="highlight new">New class: "highlight new"</p>
+                <p class="new highlight">New class: "new highlight"</p>
+                <p class="highlight-new">New class: "highlight-new"</p>
+                <p class="new-highlight">New class: "new-highlight"
+                </p>
+                <p class="news">Word class: "news"</p><br><br>
+    </main>
+
+    
+</body>
+</html>

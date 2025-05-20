@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 18</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            border: 1px solid black;
+            width: 300px;
+            height: 100px;
+        }
+        .inline-blocks{
+            display: inline-block;
+            border: 1px solid red;
+            height: 40px;
+        }
+        .normal-blocks{
+            border: 1px solid rgb(9, 194, 9);
+        }
+        .hidden{
+            display: none;
+        }
+        .invisible{
+            display: hidden;
+        }
+
+        .imageMs{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            object-fit: cover;
+        }
+        .imageMs{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            object-fit: none;
+        }
+        .imageMs{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            object-fit: scale-down;
+        }
+
+
+        .my-element{
+            cursor: pointer;
+        }
+
+        .overflow{
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+            overflow: auto;
+        }
+        .child{
+            margin: 10px;
+            border: 1px solid black;
+            background-color: rgb(48, 100, 121);
+            height: 150px;
+            color: whitesmoke;
+        }
+
+
+         .container1{
+            background-color: rgb(152, 13, 187);
+            padding: 20px;
+            margin: 10px;
+        }
+        .container1.opacity{
+            opacity: 0.5;
+        }
+        .container1.transparent{
+            background-color: rgba(241, 96, 11, 0.616);
+        }
+        .child1{
+            border: 1px solid black;
+        }
+
+
+        .heading{
+            text-shadow: 3px 3px 5px rgb(235, 11, 11);
+        }
+        .shadow{
+            border: 1px solid black;
+            box-shadow: 8px 0 10px rgb(65, 4, 231),0 8px 10px grey;
+        }
+
+        .newspaper {
+        column-count: 3;
+        column-gap: 40px;
+        column-rule:1px solid black;
+      
+        }
+        h2{
+            column-span: all;
+            text-align: center;
+        }
+
+
+        table{
+            border-collapse: collapse;
+            border: 1px solid rgb(241, 32, 32);
+            width: 100%;
+        }
+        th{
+            border: 1px solid rgb(11, 15, 211);
+            height: 30px;
+        }
+        td{
+            border: 1px solid blueviolet;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .col{
+            display: inline-block;
+            width: 150px;
+        }
+        ul.circle{
+            list-style: lower-latin;
+        }
+        ul.square{
+            list-style: square;
+        }
+        ol.upper-roman{
+            list-style-type: upper-roman; }
+        ol.lower-alpha{
+            list-style-type: lower-alpha;
+        }
+        .div2{
+            transform: rotate(180deg);
+        }
+        .div3{
+            transform: rotate(-20deg);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="logo">
+            <a href="index.html"><img src="images/idb-bisew.png" alt="IsDB-BISEWLogo"></a>
+            <div class="logo_Text">
+                <h1><a href="" style="font-size: 20px;">IsDB-BISEW</a></h1>
+                <p><a href="" style="font-size: 20px;">Islamic Development Bank<br>Bangladesh Islamic Solidarity Educational Wakf</a></p>
+            </div>
+        </div>
+        <div class="navBar">
+            <div class="dropDown">
+                <button class="dropBtn">HTML<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="chapter_1.html">Chapter 1</a>
+                    <a href="chapter_2.html">Chapter 2</a>
+                    <a href="chapter_3.html" >Chapter 3</a>
+                    <a href="chapter_4.html" >Chapter 4</a>
+                    <a href="chapter_5.html" >Chapter 5</a>
+                    <a href="chapter_6.html" >Chapter 6</a>
+                    <a href="chapter_7.html" >Chapter 7</a>
+                    <a href="chapter_8.html" >Chapter 8</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn">CSS<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="chapter_11.html" >Chapter 11</a>
+                    <a href="chapter_12.html" >Chapter 12</a>
+                    <a href="chapter_13.html" >Chapter 13</a>
+                    <a href="chapter_14.html" >Chapter 14</a>
+                    <a href="chapter_15.html" >Chapter 15</a>
+                    <a href="chapter_16.html" >Chapter 16</a>
+                    <a href="chapter_17.html" >Chapter 17</a>
+                    <a href="chapter_18.html" >Chapter 18</a>
+                    <a href="chapter_19.html" >Chapter 19</a>
+                    <a href="chapter_20.html" >Chapter 20</a>
+                    <a href="chapter_21.html" >Chapter 21</a>
+                    <a href="chapter_22.html" >Chapter 22</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn">Previous Projects<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="https://drive.google.com/file/d/1ySzGXdyQOOqlWsAKJaiTfmozWXRw8j6K/view?usp=sharing" >Microsoft Visual C#</a>
+                    <a href="https://drive.google.com/file/d/1iONn7_4zL8Rth2uuOScrCezHAQn3BEsq/view?usp=sharing" >SQL Server</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1 style="font-family:'Times New Roman', Times, serif; text-align: center;">Chapter 18<strong style="font-family: 'Times New Roman', Times, serif; font-size: 25px; text-align: center;"><br>CSS Display</strong></h1><br>
+    <main>
+
+        <div class="container">
+            <div class="inline-blocks"> First Number</div>
+            <div class="inline-blocks">Second Number</div>
+            <div class="normal-blocks">Third Number</div>
+           
+        </div>
+        <p>This is the <span class="hidden">Hidden</span> block</p>
+        <p>This is the <span class="invisible">Invisible</span> block</p><br><br><br><hr><br><br>
+
+        <img class="imageMs" src="images/microsoft.net_.jpg"><br><br><br><hr><br><br>
+
+
+        <p class="my-element">Microsoft ASP.NET</p><br><br><br><hr><br><br>
+
+
+        <div class="overflow">
+            <div class="child">
+                I never learned from a man who agreed with me
+            </div>
+        </div><br><br><br><hr><br><br>
+
+
+        <div class="container1">
+            <div class="child1">Writing code is not production, it’s not always craftsmanship though it can be, it’s design.</div>
+        </div>
+        <div class="container1 opacity">
+            <div class="child1">A good programmer is someone who always looks both ways before crossing a one-way street.</div>
+        </div>
+        <div class="container1 transparent">
+            <div class="child1">The most important single aspect of software development is to be clear about what you are trying to build.</div>
+        </div><br><br><br><hr><br><br>
+
+
+        <h1  class="heading">Project Html & Css</h1>
+        <div class="shadow">My First Webpage</div><br><br><br><hr><br><br>
+
+
+       <div class="newspaper">
+        <h2>Bangladesh</h2>
+    <p> Our Country Or, Our Homeland Or, Our Beloved Motherland
+        Introduction: Bangladesh is our homeland. It came into being on the 16th December, 1971 after a bloody liberation war. It is our pride, it is our dream, and it is our life-blood.
+        Area and situation: Bangladesh lies on the eastern part of south Asia. It is surrounded by India on three sides north, east and west and by the bay of bangle on the south. It has a total land area of 1, 47, 70 square kilometers including rivers. Bangladesh is a small country with a big population of about eighteen cores. It is the most densely populated country in the world. Population problem is the one number problem of Bangladesh. There are talking birds, game birds, prey birds, water birds, guest birds; weaving birds and beautiful birds in Bangladesh they add charm and beauty to the flora and fauna of our country. The Doel is our national bird. Bangladesh is called the land of rivers with their uncounted tributaries. These rivers contribute much to add the natural beauty of Bangladesh. The Padma, the Meghna, the Jamuna and the Karnafuli are the big rivers of Bangladesh. They provide us with a great variety of heart-torching and eye-catching sights, sounds and beauty. </p>
+        </div><br><br><hr><br>
+
+
+<table>
+    <thead>
+         <tr>
+            <th>Backend</th>
+            <th>Frontend</th>
+           </tr>
+    </thead>
+    <tbody>
+             <tr>
+                 <td>
+                    C++
+                 </td>
+
+                 <td>
+                    HTML & CSS
+                 </td>
+             </tr>
+
+             <tr>
+                <td>
+                   C#
+                </td>
+
+                <td>
+                   Angular & React
+                </td>
+            </tr>
+    </tbody>
+
+
+
+</table><br><hr><br>
+
+
+<div class="col">
+    <p>Unordered List</p>
+    <ul>
+        <li>Player 1</li>
+        <li>Player 2</li>
+        <li>Player 3</li>
+    </ul>
+    <ul class="circle">
+        <li>Player 1</li>
+        <li>Player 2</li>
+        <li>Player 3</li>
+    </ul>
+    <ul class="square">
+        <li>Player 1</li>
+        <li>Player 2</li>
+        <li>Player 3</li>
+    </ul>
+        </div>
+        <div class="col">
+            <p>Ordered List</p>
+            <ol>
+                <li>Player 1</li>
+                <li>Player 2</li>
+                <li>Player 3</li>
+            </ol>
+            <ol class="upper-roman">
+                <li>Player 1</li>
+                <li>Player 2</li>
+                <li>Player 3</li>
+            </ol>
+            <ol class="lower-alpha">
+                <li>Player 1</li>
+                <li>Player 2</li>
+                <li>Player 3</li>
+            </ol>
+                </div><br><br><br><hr><br><br>
+
+                <div class="test">HTML</div>
+                <div class="div2">CSS</div>
+                <div class="div3">JavaScript</div>
+    </main>
+</body>
+</html>

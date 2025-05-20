@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        .radial_Gradient{
+            width: 200px;
+            height: 100px;
+            background: radial-gradient(circle, #6a11cb, #d7ee06);
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            font-size: 24px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="logo">
+            <a href="index.html"><img src="images/idb-bisew.png" alt="IsDB-BISEWLogo"></a>
+            <div class="logo_Text">
+                <h1><a href="" style="font-size: 20px;">IsDB-BISEW</a></h1>
+                <p><a href="" style="font-size: 20px;">Islamic Development Bank<br>Bangladesh Islamic Solidarity Educational Wakf</a></p>
+            </div>
+        </div>
+        <div class="navBar">
+            <div class="dropDown">
+                <button class="dropBtn">HTML<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="chapter_1.html">Chapter 1</a>
+                    <a href="chapter_2.html">Chapter 2</a>
+                    <a href="chapter_3.html" >Chapter 3</a>
+                    <a href="chapter_4.html" >Chapter 4</a>
+                    <a href="chapter_5.html" >Chapter 5</a>
+                    <a href="chapter_6.html" >Chapter 6</a>
+                    <a href="chapter_7.html" >Chapter 7</a>
+                    <a href="chapter_8.html" >Chapter 8</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn">CSS<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="chapter_11.html" >Chapter 11</a>
+                    <a href="chapter_12.html" >Chapter 12</a>
+                    <a href="chapter_13.html" >Chapter 13</a>
+                    <a href="chapter_14.html" >Chapter 14</a>
+                    <a href="chapter_15.html" >Chapter 15</a>
+                    <a href="chapter_16.html" >Chapter 16</a>
+                    <a href="chapter_17.html" >Chapter 17</a>
+                    <a href="chapter_18.html" >Chapter 18</a>
+                    <a href="chapter_19.html" >Chapter 19</a>
+                    <a href="chapter_20.html" >Chapter 20</a>
+                    <a href="chapter_21.html" >Chapter 21</a>
+                    <a href="chapter_22.html" >Chapter 22</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn">Previous Projects<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="https://drive.google.com/file/d/1ySzGXdyQOOqlWsAKJaiTfmozWXRw8j6K/view?usp=sharing" >Microsoft Visual C#</a>
+                    <a href="https://drive.google.com/file/d/1iONn7_4zL8Rth2uuOScrCezHAQn3BEsq/view?usp=sharing" >SQL Server</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1 style="font-family:'Times New Roman', Times, serif; text-align: center;">Chapter 7<strong style="font-family: 'Times New Roman', Times, serif; font-size: 25px; text-align: center;"><br>HTML Graphics</strong></h1><br><br>
+
+
+    <h3>Line</h3>
+    <svg height="100" width="100" style="background-color: rgb(99, 233, 211);">
+        <line x1="0" y1="0" x2="100" y2="100" stroke="black" width="2"/>
+    </svg><br><hr>
+     
+    <h3>Rectangle</h3>
+    <svg  height="100" width="100" style="background-color: rgb(99, 233, 211);">
+        <rect  x="10" y="10" height="60" width="80" stroke="black" width="4" fill="white" />
+    </svg><br>
+
+    
+    <svg height="100" width="100" style="background-color: rgb(99, 233, 211);">
+        <rect x="10" y="10" height="60" width="80" stroke="black" width="4" fill="white" rx="8" ry="8"/>
+    </svg><br><hr>
+
+     <h3>Circle</h3>
+    <svg height="100" width="100" style="background-color: rgb(99, 233, 211);">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="white"/>
+    </svg><br><hr>
+
+    <h3>Elipse</h3>
+    <svg height="100" width="100" style="background-color: rgb(99, 233, 211);">
+     <ellipse cx="50" cy="50" rx="40" ry="20" stroke="black" stroke-width="2" fill="white"/>
+    </svg><br><hr>
+
+
+    <h3>Polyline</h3>
+    <svg height="100" width="100" style="background-color:rgb(99, 233, 211);">
+    <polyline points="50,0,100,50,50,100,0,50" fill="white" stroke="black" stroke-width="2"/>
+    </svg><br><hr>
+
+    <h3>Polygon</h3>
+    <svg height="100" width="100" style="background-color: rgb(99, 233, 211);">
+        <polygon points="50,0,100,50,50,100,0,50" fill="white" stroke="black" storoke-width="2"/>
+    </svg><br><br>
+
+
+    <svg width="100" height="100" style="background-color: rgb(99, 233, 211);" >
+        <polygon points="33,4,13,60,63,20,4,20,53,60" fill="white"/>
+    </svg><br><hr>
+
+
+    <h3>Path</h3>
+    <svg height="100" width="100" style="background-color: rgb(99, 233, 211);">
+    <path d="M50 0 L25 80 l50 0 Z" fill="white" stroke="black" stroke-width="2"/>
+    </svg><br><hr>
+
+    <h3>Text</h3>
+    <svg height="200" width="200" style="background-color: rgb(99, 233, 211);">
+    <text x="20" y="20" fill="white" transform="rotate(30)">First Line
+        <tspan x="30" y="50" fill="black">Second line</tspan>
+        <tspan x="50" y="80">Third line</tspan>
+    </text>
+    </svg><br><hr>
+
+
+    <h3>Linear Gradient </h3>
+    <svg height="100" width="200">
+        <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="yellow" />
+        <stop offset="50%" stop-color="green" />
+        <stop offset="100%" stop-color="red" />
+        </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="200" height="100" fill="url(#grad)">
+        </svg> <br>
+
+    <h3> Radial Gradient</h3>
+        <div class="radial_Gradient"></div>
+    </body>
+</html>

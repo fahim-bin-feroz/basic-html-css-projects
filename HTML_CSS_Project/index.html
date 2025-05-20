@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+           
+        }
+        .bakcgroundImage{
+            background-color: beige;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .navigation{
+            background-color: rgb(5, 120, 165);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            
+        }
+        .navigation a {
+            text-decoration: none;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+        
+        }
+        .logo img{
+            height: 100px;
+            margin-right: 10px;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+        @keyframes fadeIn{
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to{
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .logo_Text  a{
+            font-family: 'Times New Roman', Times, serif;
+            color: #fff;
+        }
+        
+        footer div{
+            background-color: #222;
+            color: #fff;
+            justify-content: space-between;
+            display: flex;
+            padding: 20px;
+            font-size: 15px;
+            position: relative;
+        }
+        .projectAuth{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .projectCons{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .instructor{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .main_footer {
+        display: flex;
+        text-align: center;
+        margin-top: 5px;
+        padding: 10px 0;
+        background-color: #666060;
+        }
+        .tags {
+            text-decoration: underline;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .header-image img{
+            width: 100%;
+            height: 70vh;
+        }
+        .navBar{
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+            background-color: rgb(5, 120, 165);
+        }
+        .dropDown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropDown .dropBtn:hover{
+            background-color: #666060;
+            border-radius: 5px;
+        }
+        .dropDown .dropBtn{
+            color: #fff;
+            padding: 10px 15px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            background-color: rgb(5, 120, 165);
+        }
+        .dropDown-Content{
+            
+            display: none;
+            position: absolute;
+            background-color: beige;
+            min-width: 160px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            z-index: 1;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: opacity 0.3s ease; transform: 0.3s ease;
+            border-radius: 5px;
+        }
+        .dropDown-Content a{
+            font-family: 'Times New Roman', Times, serif;
+            color: #222;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropDown-Content a:hover{
+            background-color: #8a8585;
+        }
+        .dropDown:hover .dropDown-Content{
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="logo">
+            <a href="index.html"><img src="images/idb-bisew.png" alt="IsDB-BISEWLogo"></a>
+            <div class="logo_Text">
+                <h1><a href="" style="font-size: 20px;">IsDB-BISEW</a></h1>
+                <p><a href="" style="font-size: 20px;">Islamic Development Bank<br>Bangladesh Islamic Solidarity Educational Wakf</a></p>
+            </div>
+        </div>
+        <div class="navBar">
+            <div class="dropDown">
+                <button class="dropBtn">HTML<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="chapter_1.html">Chapter 1</a>
+                    <a href="chapter_2.html">Chapter 2</a>
+                    <a href="chapter_3.html" >Chapter 3</a>
+                    <a href="chapter_4.html" >Chapter 4</a>
+                    <a href="chapter_5.html" >Chapter 5</a>
+                    <a href="chapter_6.html" >Chapter 6</a>
+                    <a href="chapter_7.html" >Chapter 7</a>
+                    <a href="chapter_8.html" >Chapter 8</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn">CSS<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="chapter_11.html" >Chapter 11</a>
+                    <a href="chapter_12.html" >Chapter 12</a>
+                    <a href="chapter_13.html" >Chapter 13</a>
+                    <a href="chapter_14.html" >Chapter 14</a>
+                    <a href="chapter_15.html" >Chapter 15</a>
+                    <a href="chapter_16.html" >Chapter 16</a>
+                    <a href="chapter_17.html" >Chapter 17</a>
+                    <a href="chapter_18.html" >Chapter 18</a>
+                    <a href="chapter_19.html" >Chapter 19</a>
+                    <a href="chapter_20.html" >Chapter 20</a>
+                    <a href="chapter_21.html" >Chapter 21</a>
+                    <a href="chapter_22.html" >Chapter 22</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn">Previous Projects<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="https://drive.google.com/file/d/1ySzGXdyQOOqlWsAKJaiTfmozWXRw8j6K/view?usp=sharing" >Microsoft Visual C#</a>
+                    <a href="https://drive.google.com/file/d/1iONn7_4zL8Rth2uuOScrCezHAQn3BEsq/view?usp=sharing" >SQL Server</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main style="height: 100vh;">
+        <div class="bakcgroundImage">
+        <section style="margin: 0;">
+            <h2 style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 30px; padding-top: 20px;">Welcome to My ProjectSite
+            </h2>
+            <article style="font-family: 'Times New Roman', Times, serif;font-size:20px;padding:10px 50px;">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum voluptas iste eum ipsa voluptatum, nisi fuga aliquam, eos ab hic earum veritatis tempora animi corrupti molestiae officiis mollitia ad facere. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, est placeat tenetur repudiandae dicta quaerat saepe maiores hic earum reprehenderit debitis iste, dolorum suscipit eos error id, aspernatur nemo neque!
+            </article>
+        </section>
+        <section>
+            <div>
+                <div class="header-image">
+                    <img src="images/hw.jpg" alt="">
+
+                </div>
+            </div>
+        </section>
+    
+        </div>
+    </main>
+    
+    <footer class="primary">
+        <div class="primary_footer">
+        <p class="projectAuth">
+            <strong class="tags">Project Authority</strong><br>
+            <br>Zahid Al-Mahadi<br>
+            Senior Program Coordinator<br>
+            Project Authority<br>
+            IsDB-BISEW IT Scholarship Programme<br>
+            
+        </p>
+        <p class="projectCons">
+            <strong class="tags">Project Consultant</strong><br>
+            <br>Zahidul Hassan<br>
+            Consultant at Show & Tell Consulting Ltd<br>
+            IsDB-BISEW IT Scholarship Programme<br>
+            Email: jewelmir81@gmail.com<br>
+            Phone: +8801535110014
+        </p>
+        <p class="instructor">
+            <strong class="tags">Project Instructor</strong><br>
+            <br>Nishat Sharmin<br>
+            Faculty of ASP.NET<br>
+            IsDB-BIESW IT Scholarship Programme<br>
+            Email: Nishatsharmin@gmail.com<br>
+            Phone: +8801681448998
+        </p>
+        </div>
+        <div class="main_footer">
+            <p>© 2025 IsDB-BISEW All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

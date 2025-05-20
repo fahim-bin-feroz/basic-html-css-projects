@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 21</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+        --a-global-color: red;
+        }
+        section {
+        --a-local-color: blue;
+        }
+        header {
+        color: var(--a-global-color);
+        }
+        footer {
+        color: var(--a-local-color);
+        }
+
+        #h3S,
+        footer {
+        height: 30px;
+        line-height: 30px;
+        }
+        #h3S {
+        border-bottom: 1px solid black;
+        }
+        #CalculationFooter{
+        border-top: 1px solid black;
+        text-align: center;
+        }
+        .main-content {
+        min-height: calc(100vh - 96px);
+        }
+        .long-content {
+        border: 1px solid #ccc;
+        height: 500px;
+        }
+
+        #divM {
+        font-size: 12px;
+        counter-reset: my-section;
+        }
+        #h1M {
+        counter-reset: my-sub-section;
+        }
+        #h1M::before {
+        counter-increment: my-section;
+        content: "Section " counter(my-section) ". ";
+        }
+        #h2L::before {
+        counter-increment: my-sub-section;
+        content: counter(my-section) "." counter(my-sub-section) " ";
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="logo">
+            <a href="index.html"><img src="images/idb-bisew.png" alt="IsDB-BISEWLogo"></a>
+            <div class="logo_Text">
+                <h1><a href="" style="font-size: 20px;">IsDB-BISEW</a></h1>
+                <p><a href="" style="font-size: 20px;">Islamic Development Bank<br>Bangladesh Islamic Solidarity Educational Wakf</a></p>
+            </div>
+        </div>
+        <div class="navBar">
+            <div class="dropDown">
+                <button class="dropBtn">HTML<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="chapter_1.html">Chapter 1</a>
+                    <a href="chapter_2.html">Chapter 2</a>
+                    <a href="chapter_3.html" >Chapter 3</a>
+                    <a href="chapter_4.html" >Chapter 4</a>
+                    <a href="chapter_5.html" >Chapter 5</a>
+                    <a href="chapter_6.html" >Chapter 6</a>
+                    <a href="chapter_7.html" >Chapter 7</a>
+                    <a href="chapter_8.html" >Chapter 8</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn">CSS<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="chapter_11.html" >Chapter 11</a>
+                    <a href="chapter_12.html" >Chapter 12</a>
+                    <a href="chapter_13.html" >Chapter 13</a>
+                    <a href="chapter_14.html" >Chapter 14</a>
+                    <a href="chapter_15.html" >Chapter 15</a>
+                    <a href="chapter_16.html" >Chapter 16</a>
+                    <a href="chapter_17.html" >Chapter 17</a>
+                    <a href="chapter_18.html" >Chapter 18</a>
+                    <a href="chapter_19.html" >Chapter 19</a>
+                    <a href="chapter_20.html" >Chapter 20</a>
+                    <a href="chapter_21.html" >Chapter 21</a>
+                    <a href="chapter_22.html" >Chapter 22</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <button class="dropBtn">Previous Projects<span style="font-size: 17px;"> ▼</span></button>
+                <div class="dropDown-Content">
+                    <a href="https://drive.google.com/file/d/1ySzGXdyQOOqlWsAKJaiTfmozWXRw8j6K/view?usp=sharing" >Microsoft Visual C#</a>
+                    <a href="https://drive.google.com/file/d/1iONn7_4zL8Rth2uuOScrCezHAQn3BEsq/view?usp=sharing" >SQL Server</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1 style="font-family:'Times New Roman', Times, serif; text-align: center;">Chapter 21<strong style="font-family: 'Times New Roman', Times, serif; font-size: 25px; text-align: center;"><br>Advanced CSS</strong></h1><br>
+    <main>
+        <section>
+            <header>
+            <h2 id="h2L">Hello!Students</h2>
+            </header>
+            <p>Udemy is an online learning and teaching marketplace with over 250000 courses and 73 million students..</p>
+            <footer>
+            <p>Join us </p>
+            </footer>
+            </section>
+            <footer>
+            <p> Copyright © 2025</p>
+            </footer><br><hr>
+            <h3 id="h3S">Chapter</h3>
+            <div id="divM" class="main-content">
+            <p class="paragraph">Head</p>
+            <p class="long-content">Article</p>
+            </div>
+            <footer id="CalculationFooter">Copyright © 2025</footer>
+        
+            <div id="divM">   
+                <h1 id="h1M">Youtube tutorials:</h1>
+                <h2 id="h2L">It Tutorial</h2>
+                <h2 id="h2L">Food Tutorial</h2>
+                <h1 id="h1M"> Subject Tutorial:</h1>
+                <h2 id="h2L">Java</h2>
+                <h2 id="h2L">C Sharp</h2>
+            </div><br><br><br><br>
+    </main>
+</body>
+</html>
