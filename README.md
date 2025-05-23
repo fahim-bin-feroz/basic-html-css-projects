@@ -1,4 +1,4 @@
-# Basic HTML CSS Project
+# HTML CSS Project
 This is a simple front-end project built using HTML and CSS as part of my course requirements. It was created and submitted to my Project Consultant for review and evaluation.
 
 ✅ Project Overview
